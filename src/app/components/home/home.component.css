@@ -1,0 +1,135 @@
+.section-title {
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .tag {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 4px 10px;
+      margin: 3px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .btn-custom {
+      background: #000;
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin: 5px;
+    }
+    .btn-custom:hover {
+      background: #333;
+    }
+
+
+
+    /* experince page layout  */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 0;
+  width: 90%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #d4e2f0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center; /* FIX: aligns logos + cards */
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-item.left {
+  flex-direction: row;
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+.timeline-icon {
+  flex: 0 0 120px; /* fixed width for alignment */
+  text-align: center;
+}
+
+.timeline-icon img {
+  width: 80px;
+  height: 80px;
+  /* border-radius: 50%; */
+  /* border: 2px solid #d4e2f0; */
+  padding: 5px;
+}
+
+.timeline-icon .date {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.timeline-content {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+
+
+
+
+/* text-background css - button from web */
+/* <!-- HTML !--> */
+/* <button class="button-52" role="button">Button 52</button> */
+
+.text-highlight {
+    /* align-items: center; */
+  display: inline-block;
+  font-size: 20px;          /* adjust as per your heading size */
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 5px 10px;        /* smaller padding for text */
+  cursor: default;
+  border: 1px solid black;
+  background-color: transparent;
+  user-select: none;
+}
+
+.text-highlight::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.text-highlight:hover::after {
+  top: 0;
+  left: 0;
+}
